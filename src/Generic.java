@@ -45,18 +45,31 @@ class ColorPrinter extends Printer<String> {
 }
 
 class NonGenericSubClassKundliPrinter extends Printer<String> {
-    public NonGenericSubClassKundliPrinter(String someString)
-    {
+    public NonGenericSubClassKundliPrinter(String someString) {
         super(someString);
     }
 }
 
-class GenericSubClassKundliPrinter<T> extends Printer<T>{
-   public GenericSubClassKundliPrinter(T something){
-       super(something);
-   }
+class GenericSubClassKundliPrinter<T> extends Printer<T> {
+    public GenericSubClassKundliPrinter(T something) {
+        super(something);
+    }
 }
 
+// Class with more than one generic type.
+class Pair<K,V>{
+    private K key;
+    private V value;
+
+    public void put(K key, V value){
+        this.key = key ;
+        this.value = value;
+    }
+
+    public void print(){
+        System.out.println("The pair inserted is : "+key+" and "+value);
+    }
+}
 public class Generic {
     public static void main(String[] args) {
 
@@ -84,5 +97,10 @@ public class Generic {
         // Object of GenericSubClassKundliPrinter
         GenericSubClassKundliPrinter<String> genericSubClassKundliPrinterObj = new GenericSubClassKundliPrinter<>("name : Someone, age : 27, smile : bright&Wide");
         genericSubClassKundliPrinterObj.print();
+
+        // Pair object
+        Pair<String, Integer> pairObj = new Pair<>();
+        pairObj.put("Rohan",19);
+        pairObj.print();
     }
 }
