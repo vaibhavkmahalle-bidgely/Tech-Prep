@@ -57,19 +57,20 @@ class GenericSubClassKundliPrinter<T> extends Printer<T> {
 }
 
 // Class with more than one generic type.
-class Pair<K,V>{
+class Pair<K, V> {
     private K key;
     private V value;
 
-    public void put(K key, V value){
-        this.key = key ;
+    public void put(K key, V value) {
+        this.key = key;
         this.value = value;
     }
 
-    public void print(){
-        System.out.println("The pair inserted is : "+key+" and "+value);
+    public void print() {
+        System.out.println("The pair inserted is : " + key + " and " + value);
     }
 }
+
 public class Generic {
     public static void main(String[] args) {
 
@@ -100,7 +101,7 @@ public class Generic {
 
         // Pair object
         Pair<String, Integer> pairObj = new Pair<>();
-        pairObj.put("Rohan",19);
+        pairObj.put("Rohan", 19);
         pairObj.print();
     }
 }
