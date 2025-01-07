@@ -1,5 +1,5 @@
 package SmallPrograms;
-
+import  Classes.*;
 public class WrapperClass {
     public static void main(String[] args) {
         Integer i = Integer.valueOf("123");// as valueOf is a static method of Integer class we access it using ClassName.methodName .
@@ -18,5 +18,13 @@ public class WrapperClass {
         int c = i1.intValue();
         System.out.println(c);
         System.out.println(i1);
+
+        for (String arg : args) {
+            System.out.println(arg);
+        }
+
+        Concrete importedObj = new Concrete();
+        importedObj.setAge(123);
+        System.out.println("My age is "+ importedObj.age);
     }
 }

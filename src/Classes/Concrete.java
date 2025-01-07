@@ -7,7 +7,7 @@ public class Concrete {
     // A concrete class can inherit from an abstract class or implement an interface, but it must provide implementations for all inherited abstract methods.
 
     String name ;
-    int age ;
+    public int age ;
 
     public void setAge(int age) {
         this.age = age;
