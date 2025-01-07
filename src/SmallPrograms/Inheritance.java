@@ -30,7 +30,11 @@ class Student extends Person {
 }
 public class Inheritance {
     public static void main(String[] args) {
-
+        /** In java each class can have maximum one superclass but unlimited subclasses.
+         * private members of parent are not accessible by the subclass and can only be indirectly accessed.
+         * members that have default accessibility in the superclass are also not accessible by subclass in other package.
+         * Single Inheritance , Multilevel Inheritance, Hierarchical Inheritance
+         */
         Student s1 = new Student();
         s1.setAge(22);
         s1.setName("Vaibhav");
