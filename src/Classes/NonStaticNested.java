@@ -1,3 +1,5 @@
+package Classes;
+
 class NonStaticOuterClass {
     int instanceVariable = 10;
     static int classVariable = 20;

@@ -1,3 +1,5 @@
+package Classes;
+
 class OuterClass {
     int instanceVariable = 10;
     static int classVariable = 20;
@@ -5,7 +7,7 @@ class OuterClass {
     static class NestedClass {
         public void print() {
             System.out.println(classVariable + ": classVariable " + "and instanceVariable can't access");
-            // here we can access classVariable but not instanceVariable bcoz instanceVariable is related to OuterClass.
+            // here we can access classVariable but not instanceVariable bcoz instanceVariable is related to Classes.OuterClass.
             // static class can only access static variables and methods.
         }
 
@@ -40,7 +42,7 @@ public class StaticNested {
     // Two types : Static Nested & Non-Static Nested Class
     // Non-Static : Member Inner, Local Inner, Anonymous Inner
     public static void main(String[] args) {
-        // here you didn't need Object of OuterClass to access the NestedClass that's bcoz it's static.
+        // here you didn't need Object of Classes.OuterClass to access the NestedClass that's bcoz it's static.
         OuterClass.NestedClass NestedObj = new OuterClass.NestedClass();
         NestedObj.print();
 

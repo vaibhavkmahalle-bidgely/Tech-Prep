@@ -1,3 +1,5 @@
+package Classes;
+
 class IntegerPrinter {
     int thingToPrint;
 
@@ -36,7 +38,7 @@ class Printer<T> {
     }
 }
 
-// Inheritance in Generic Classes
+// Inheritance in Classes.Generic Classes
 class ColorPrinter extends Printer<String> {
     //Explicit constructor calling constructor of superclass
     public ColorPrinter(String something) {
@@ -86,20 +88,20 @@ public class Generic {
         Printer<Integer> printIntObj = new Printer<>(55);
         printIntObj.print();
 
-        // Object of ColorPrinter Class
-        ColorPrinter colorPrinterObj = new ColorPrinter("Colourful Printer!!");
+        // Object of Classes.ColorPrinter Class
+        ColorPrinter colorPrinterObj = new ColorPrinter("Colourful Classes.Printer!!");
         colorPrinterObj.print();
 
-        // Object of NonGenericSubClassKundliPrinter Class
+        // Object of Classes.NonGenericSubClassKundliPrinter Class
         // here we are inheriting the print method from the parent class.
         NonGenericSubClassKundliPrinter kundliPrinterObj = new NonGenericSubClassKundliPrinter("name : Vaibhav, age : 26, color : brightWhite");
         kundliPrinterObj.print();
 
-        // Object of GenericSubClassKundliPrinter
+        // Object of Classes.GenericSubClassKundliPrinter
         GenericSubClassKundliPrinter<String> genericSubClassKundliPrinterObj = new GenericSubClassKundliPrinter<>("name : Someone, age : 27, smile : bright&Wide");
         genericSubClassKundliPrinterObj.print();
 
-        // Pair object
+        // Classes.Pair object
         Pair<String, Integer> pairObj = new Pair<>();
         pairObj.put("Rohan", 19);
         pairObj.print();

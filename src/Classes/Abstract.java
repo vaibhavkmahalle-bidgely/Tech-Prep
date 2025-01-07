@@ -1,3 +1,5 @@
+package Classes;
+
 abstract class Shape{
     int x,y;
 
@@ -8,7 +10,7 @@ abstract class Shape{
     }
 
     void draw(){
-        System.out.println("Drawing Shape");
+        System.out.println("Drawing Classes.Shape");
     }
 
     double area(){
@@ -20,7 +22,7 @@ abstract class Shape{
 class Circle extends Shape{
     int radius;
 
-    // constructor of Circle class
+    // constructor of Classes.Circle class
     public Circle(int x, int y, int radius){
         super(x,y);
         this.radius = radius;

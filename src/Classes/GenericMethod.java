@@ -1,3 +1,5 @@
+package Classes;
+
 public class GenericMethod {
 //    public void printArray(String []s){
 //        for (int i = 0; i < s.length; i++) {

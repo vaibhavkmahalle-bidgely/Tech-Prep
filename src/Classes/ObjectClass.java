@@ -1,3 +1,5 @@
+package Classes;
+
 public class ObjectClass {
     private String name ;
     private int age ;

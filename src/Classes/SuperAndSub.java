@@ -1,3 +1,5 @@
+package Classes;
+
 class Vehicle {
     // SuperClass
     String brand;
@@ -27,7 +29,7 @@ class Car extends Vehicle {
     @Override
     void displayInfo(){
         super.displayInfo();
-        System.out.println("This is a Car!");
+        System.out.println("This is a Classes.Car!");
     }
 
 }
