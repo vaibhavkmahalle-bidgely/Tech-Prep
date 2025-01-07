@@ -2,15 +2,18 @@ package SmallPrograms;
 
 class Box {
     private int length, width, height;
+    private boolean bool;
 
     public void setDimensions(int l, int b, int h) {
         length = l;
         width = b;
         height = h;
+        bool = true;
     }
 
     public void showDimensions() {
         System.out.println("Dimensions of box are : L, B, H : " + length + " , " + width + " , " + height);
+        System.out.println("Boolean value is : "+ bool);
     }
 }
 
@@ -38,7 +41,7 @@ public class ClassAndObjects {
         // here obj will point to new object of Class Box, hence the values assigned to it will be gone.
         obj = new Box();
         obj.showDimensions();
-
+        // default value of instance variable is 0.
     }
 
 
