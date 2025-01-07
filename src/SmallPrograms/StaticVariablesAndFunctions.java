@@ -19,6 +19,8 @@ public class StaticVariablesAndFunctions {
         StaticVariablesAndFunctions obj2 = new StaticVariablesAndFunctions();
 
         obj.hello();
+
+        // Static functions/methods can only access static members of same class.
         hi();
         StaticVariablesAndFunctions.hi();
 
