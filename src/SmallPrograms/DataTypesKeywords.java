@@ -4,13 +4,16 @@ class TypeConversion {
     int a = 10;
     float b = 10.2f;
     double c = 1.2;
+
+    // float b = 2.3; not allowed bcoz the narrowing conversion is not allowed
     {
         // WIDENING conversion lower datatype converted to higher.
-       // b = a ;
+        // b = a ;
 
         // NARROWING conversion
         // a = b; not allowed as the precision is lost
-           a = (int) b;
+        a = (int) c;
+
     }
 }
 
@@ -37,7 +40,7 @@ public class DataTypesKeywords {
         c = 'c';
     }
 
-    public DataTypesKeywords(){
+    public DataTypesKeywords() {
         b = 1;
         s = 2;
         i = 3;
@@ -47,7 +50,7 @@ public class DataTypesKeywords {
     public static void main(String[] args) {
         DataTypesKeywords dataTypes = new DataTypesKeywords();
         System.out.println("Accessing instance variables with help of object : " + dataTypes.isSincere + " , " + dataTypes.c + " , " + dataTypes.b);
-        System.out.println("Accessing static variables without object : "+ fl +" , "+ d);
+        System.out.println("Accessing static variables without object : " + fl + " , " + d);
 
         TypeConversion convertType = new TypeConversion();
         System.out.println(convertType.a);
