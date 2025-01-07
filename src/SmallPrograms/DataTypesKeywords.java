@@ -1,5 +1,19 @@
 package SmallPrograms;
 
+class TypeConversion {
+    int a = 10;
+    float b = 10.2f;
+    double c = 1.2;
+    {
+        // WIDENING conversion lower datatype converted to higher.
+       // b = a ;
+
+        // NARROWING conversion
+        // a = b; not allowed as the precision is lost
+           a = (int) b;
+    }
+}
+
 public class DataTypesKeywords {
 
     // declaring variables in java
@@ -34,5 +48,10 @@ public class DataTypesKeywords {
         DataTypesKeywords dataTypes = new DataTypesKeywords();
         System.out.println("Accessing instance variables with help of object : " + dataTypes.isSincere + " , " + dataTypes.c + " , " + dataTypes.b);
         System.out.println("Accessing static variables without object : "+ fl +" , "+ d);
+
+        TypeConversion convertType = new TypeConversion();
+        System.out.println(convertType.a);
+        System.out.println(convertType.b);
+        System.out.println(convertType.c);
     }
 }
