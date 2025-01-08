@@ -1,5 +1,18 @@
 package SmallPrograms;
 
+class Parent{
+    public static void f1(){
+        System.out.println("hello");
+    }
+}
+
+class Child extends Parent{
+    public static void f1(){
+        System.out.println("meow!");
+    }
+}
+// here method f1 from Child hides method f1 from Parent : it is method hiding which is different from method overriding.
+
 public class StaticVariablesAndFunctions {
     private int x = 2; // Instance member variable
     static private int y = 10; // Static member variable
@@ -19,6 +32,8 @@ public class StaticVariablesAndFunctions {
         StaticVariablesAndFunctions obj2 = new StaticVariablesAndFunctions();
 
         obj.hello();
+
+        Child.f1();
 
         // Static functions/methods can only access static members of same class.
         hi();
