@@ -28,7 +28,7 @@ public class ClassAndObjects {
     // Object is a real world entity
     // Object is an instance of a class
     // Object consumes memory to hold property values.
-    // bada variable hi hai object
+    // Object is as good as a BIG variable.
 
     // In java we make objects dynamically only.
 

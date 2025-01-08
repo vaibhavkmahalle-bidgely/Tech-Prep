@@ -31,7 +31,7 @@ public class AccessModifiers {
     }
 
     public static void main(String[] args) {
-        AccessModifiers a = new AccessModifiers(); // called constructor as sooon as object is created
+        AccessModifiers a = new AccessModifiers(); // called constructor as soon as object is created
         // creating an object assigns the memory and allocates values 0,0,0 to all l,b,h
         // but to represent a real world entity object must be initialized properly hence constructor is introduced.
         // let's say a box with l,b,h as 0,0,0 doesn't make sense so person who is defining a class can decide what the properties must be initialized with while creating an object.

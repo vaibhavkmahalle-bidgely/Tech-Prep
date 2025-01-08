@@ -30,10 +30,11 @@ public class DataTypesKeywords {
     static double d = 4.53;
 
     // initializing variables in java
-    // can't initialize the variables directly bcoz : c = 'c';
+    //  c = 'c';
+    // can't initialize the variables directly bcoz :
     // In Java, variable initialization like this must occur:
-    //Inside a method, constructor, or initializer block.
-    //Directly at the point of declaration (for instance or static variables).
+    // Inside a method, constructor, or initializer block.
+    // Directly at the point of declaration (for instance or static variables).
 
     {
         isSincere = true;

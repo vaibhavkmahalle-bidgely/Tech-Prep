@@ -31,29 +31,7 @@ final class FinalKeyword {
 }
 
 class A {
-    // final variable can be assigned only once then value can't be changed.
-    // variable that is declared as final and not initialized is called blank final variable.
-    final int firstwayofInitialization = 4;
-    final int secondWay;
-    final int thirdWay;
-    final static int staticway1 = 1;
-    final static int staticway2;
-
-    static
-    {
-        staticway2 = 1;
-    }
-
-    {
-        secondWay = 2;
-    }
-
-    public A() {
-        thirdWay = 3;
-
-    }
-
-    void print(int a) {
+     void print(int a) {
         System.out.println("you're in class A " + a);
 
     }
