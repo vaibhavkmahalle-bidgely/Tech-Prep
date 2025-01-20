@@ -7,7 +7,7 @@ public class Collection {
 
     // Interfaces in collection :
 
-        // :: collection : for group of objects. It is a parent interface for all the interfaces in collection framework.
+        // * Collection : for group of objects. It is a parent interface for all the interfaces in collection framework.
                 // 1. List :
                 //       Duplicates allowed,
                 //       Insertion order must be preserved
@@ -52,9 +52,18 @@ public class Collection {
             *  Comparable :
             *       Interface for default sorting
             *
-            *  Comparatpr :
+            *  Comparator :
             *       Interface for customized sorting
             *
             * */
+
+
+
+    /* Collection and Collections
+
+           1. Collection  :- Collection is an Interface.
+           2. Collections :- Collections is a Class.
+                             Collections class provide several utility methods like sort()
+    */
 
 }
