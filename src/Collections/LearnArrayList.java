@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.stream.Collectors;
 
-public class LearnList {
+public class LearnArrayList {
     // Duplicates allowed.
     // Insertion order preserved.
 
