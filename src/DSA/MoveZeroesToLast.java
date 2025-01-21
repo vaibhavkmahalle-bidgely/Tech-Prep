@@ -39,14 +39,14 @@ class Solution1 {
 
         Arrays.sort(nums);
 
-        return nums;
+        return 1;
     }
 }
 
 public class MoveZeroesToLast {
     public static void main(String[] args) {
-        Solution1 s1 = new Solution1();
-        s1.moveZeroes(new int[]{9,2,9,7,1,8,7,7,8,9,3,7,4,6,5,3,8,8,0,2,2,1,5,8,5,0,6,8,5,5,5,4,6,4,1,1,0,4,0,0,2,2,3,8,2,7,1,3});
+//        Solution1 s1 = new Solution1();
+//        s1.moveZeroes(new int[]{9,2,9,7,1,8,7,7,8,9,3,7,4,6,5,3,8,8,0,2,2,1,5,8,5,0,6,8,5,5,5,4,6,4,1,1,0,4,0,0,2,2,3,8,2,7,1,3});
     }
 }
 
