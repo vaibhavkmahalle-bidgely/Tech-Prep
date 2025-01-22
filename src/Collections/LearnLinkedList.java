@@ -4,13 +4,13 @@ import java.util.*;
 
 public class LearnLinkedList {
 
-    public static LinkedList<Integer> enqueue(LinkedList<Integer> list3, int a){
-            list3.addLast(a);
-            return list3;
+    public static LinkedList<Integer> enqueue(LinkedList<Integer> list3, int a) {
+        list3.addLast(a);
+        return list3;
     }
 
     public static LinkedList<Integer> dequeue(LinkedList<Integer> list3) {
-        if(list3.isEmpty()){
+        if (list3.isEmpty()) {
             throw new RuntimeException("queue is empty, cannot perform dequeue operation");
         }
 
@@ -111,9 +111,9 @@ public class LearnLinkedList {
 
         LinkedList<Integer> queue = new LinkedList<>();
 
-        LearnLinkedList.enqueue(queue,2);
-        LearnLinkedList.enqueue(queue,1);
-        LearnLinkedList.enqueue(queue,4);
+        LearnLinkedList.enqueue(queue, 2);
+        LearnLinkedList.enqueue(queue, 1);
+        LearnLinkedList.enqueue(queue, 4);
 
         System.out.println("queue after enqueue operations on queue : " + queue);
 
@@ -134,6 +134,23 @@ public class LearnLinkedList {
                 Write a program to check if a given element exists in a LinkedList. If it does, return its index; otherwise, return -1.
                 Find the index of the first and last occurrence of a specific element in a LinkedList.
 
+        */
+        System.out.println("Checking if queue contains 4 : " + queue.contains(4));
+        System.out.println("Index of 1 : " + queue.indexOf(1));
+        LearnLinkedList.enqueue(queue, 1);
+        LearnLinkedList.enqueue(queue, 1);
+        LearnLinkedList.enqueue(queue, 1);
+        LearnLinkedList.enqueue(queue, 2);
+
+        System.out.println("Last Index of 1 : " + queue.lastIndexOf(1));
+        System.out.println("Size of queue : " + queue.size());
+
+
+
+
+
+        /*
+
            4. Iteration
                 iterator(): Returns an iterator for the list.
                 listIterator(): Returns a list iterator to traverse the list in both directions.
@@ -141,7 +158,23 @@ public class LearnLinkedList {
               Problems to Practice:
                 Iterate over a LinkedList using an iterator and print all the elements.
                 Traverse a LinkedList in reverse order using a ListIterator.
+        */
+        Iterator<Integer> itr = queue.iterator();
 
+        System.out.println("Printing the iterator : " + itr);
+        System.out.println("Printing if iterator hasNext : " + itr.hasNext());
+        while (itr.hasNext()) {
+            System.out.println("Printing the queue using iterator :" + itr.next());
+        }
+
+        ListIterator<Integer> listIterator = queue.listIterator();
+
+        System.out.println("checking both previous and next of the iterator : " + listIterator.hasNext() + " " + listIterator.hasPrevious());
+        for(int element : queue){
+            System.out.println("Iterator and element printing side by side : "+ element + " " + listIterator.next());
+            System.out.println("Printing previous as well : "+ listIterator.previous());
+        }
+        /*
             5. Conversion
                 toArray(): Converts the list to an array.
                 clear(): Removes all elements from the list.
