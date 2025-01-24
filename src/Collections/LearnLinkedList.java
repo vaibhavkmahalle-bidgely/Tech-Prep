@@ -36,13 +36,12 @@ public class LearnLinkedList {
         Object removeLast()
     */
     public static void main(String[] args) {
-        LinkedList llist = new LinkedList();
+        LinkedList<Integer> llist = new LinkedList<>();
 
         llist.addFirst(2);
         llist.addFirst(3);
         llist.add(1, 9); // add method from List interface
         llist.add(10);// add method from collections interface
-        llist.add("hello");
 
         System.out.println("linked list " + llist);
         System.out.println("First element of list : " + llist.getFirst());
@@ -182,6 +181,27 @@ public class LearnLinkedList {
               Problems to Practice:
                 Convert a LinkedList to an array and print the array.
                 Clone a LinkedList, modify the clone, and show that the original list remains unchanged.
+
+        */
+        System.out.println("Converting linkedlist to an array : ");
+        System.out.println("Converted the linkedList to an array : " + Arrays.toString(llist.toArray()));
+        // llist.toArray() returns an array of Object[] type if we print that directly it will print the memory reference of the array and not the content
+        // so we need to convert that to a readable string to print it.
+
+        System.out.println("Checking what is present in llist after converting to array : " + llist);
+        System.out.println("Creating shallow copy of the list : ");
+        Object clonedList = llist.clone();
+        llist.add(55);
+
+        llist.set(1,88);
+        System.out.println("Printing cloned list and original list : " + clonedList + " original List : "+ llist);
+        System.out.println("Clearing the list : ");
+        llist.clear();
+        System.out.println("Printing cloned list and original list after clearing : " + clonedList + " original List : "+ llist);
+
+
+
+        /*
 
            6. Other Useful Methods
                 isEmpty(): Checks if the list is empty.
