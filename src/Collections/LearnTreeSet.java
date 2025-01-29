@@ -2,6 +2,29 @@ package Collections;
 
 import java.util.TreeSet;
 
+class Employee implements Comparable<Employee> {
+    int id;
+    String name;
+    double salary;
+
+    public Employee(int id, String name, double salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    @Override
+    public int compareTo(Employee o) {
+        return Integer.compare(this.id, o.id);
+
+    }
+
+    @Override
+    public String toString() {
+        return id + " - " + name + " - " + salary;
+    }
+}
+
 public class LearnTreeSet {
     // TreeSet and TreeMap are only two collections where we cannot insert heterogeneous objects anywhere else it is allowed.
     // TreeSet can contaion null value only if the collection does not have any other object i.e. when the Set is empty.
@@ -46,16 +69,31 @@ public class LearnTreeSet {
 
     */
 
+
+
     public static void main(String[] args) {
-        TreeSet<StringBuffer> t = new TreeSet<>();
-        t.add(new StringBuffer("B"));
-        t.add(new StringBuffer("C"));
-        t.add(new StringBuffer("A"));
-        System.out.println("Contents of TreeSet : "+ t);
+        /*Create a TreeSet to store unique names of students. Add a few names and print them in ascending order (natural order).*/
+
+        TreeSet<String> studentNames = new TreeSet<>();
+        studentNames.add("Vaibhav");
+        studentNames.add("Sachin");
+        studentNames.add("Jayanta");
+        studentNames.add("Ganesh");
+        System.out.println("Current Student Names are : " + studentNames);
+
+        // Create an Employee class with id, name, and salary. Implement Comparable<Employee> to sort employees by ID in ascending order.
+
+        TreeSet<Employee> employees = new TreeSet<>();
+
+        employees.add(new Employee(4,"Sahana",45000));
+        employees.add(new Employee(3,"Sachin",45000));
+        employees.add(new Employee(5,"Sankarshan",45000));
+
+        System.out.println("Employees in the TreeSet : "+ employees);
+
+        // Modify the Employee class from the previous example. Use a Comparator to sort employees by salary in descending order.
+
     }
-
-
-
 
 
 }
