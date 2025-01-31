@@ -201,69 +201,10 @@ class Solution4 {
         twoNode.next = null;
 
 
-        if (zeroDummy.next == null) {
-            if (oneNode.next == null) {
-                return twoNode.next;
-            } else {
-                if (twoNode.next == null) {
-                    return oneNode.next;
-                } else {
-                    oneDummy.next = twoNode.next;
-                    return oneNode.next;
-                }
-            }
-        } else {
-            if (oneDummy.next == null) {
-                if (twoDummy.next == null) {
-                    return zeroDummy.next;
-                } else {
-                    zeroNode.next = oneDummy.next;
-                    return zeroDummy.next;
-                }
-            } else {
-                if (twoDummy.next == null) {
-                    zeroNode.next = oneDummy.next;
-                    return zeroDummy.next;
-                } else {
-                    zeroNode.next = oneDummy.next;
-                    oneNode.next = twoDummy.next;
-                    return zeroDummy.next;
-                }
-            }
-        }
 
 
-        if (zeroDummy.next == null) {
-            if (oneNode.next == null) {
-                return twoNode.next;
-            } else {
-                if (twoNode.next == null) {
-                    return oneNode.next;
-                } else {
-                    oneDummy.next = twoNode.next;
-                    return oneNode.next;
-                }
-            }
-        } else {
-            if (oneDummy.next == null) {
-                if (twoDummy.next == null) {
-                    oneNode.next = null;
-                    return zeroDummy.next;
-                } else {
-                    zeroNode.next = oneDummy.next;
-                    return zeroDummy.next;
-                }
-            } else {
-                if (twoDummy.next == null) {
-                    zeroNode.next = oneDummy.next;
-                    return zeroDummy.next;
-                } else {
-                    zeroNode.next = oneDummy.next;
-                    oneNode.next = twoDummy.next;
-                    return zeroDummy.next;
-                }
-            }
-        }
+
+
 
 
         // Connect the three lists properly
