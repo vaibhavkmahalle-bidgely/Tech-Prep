@@ -1,5 +1,8 @@
 package Collections;
 
+import com.sun.source.tree.Tree;
+
+import java.util.Comparator;
 import java.util.TreeSet;
 
 class Employee implements Comparable<Employee> {
@@ -25,6 +28,41 @@ class Employee implements Comparable<Employee> {
     }
 }
 
+class Students implements Comparable<Students> {
+    int id;
+    String name;
+    double salary;
+
+    public Students(int id, String name, double salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    @Override
+    public int compareTo(Students o) {
+        return CharSequence.compare(this.name, o.name);
+
+    }
+
+    @Override
+    public String toString() {
+        return id + " - " + name + " - " + salary;
+    }
+}
+
+class SalaryComparator implements Comparator<Employee>{
+    public int compare(Employee o1, Employee o2) {
+        return Double.compare(o2.salary, o1.salary);
+    }
+}
+
+class ReverseOrderComparator implements Comparator<Employee>{
+    @Override
+    public int compare(Employee o1, Employee o2) {
+       return CharSequence.compare(o2.name,o1.name);
+    }
+}
 public class LearnTreeSet {
     // TreeSet and TreeMap are only two collections where we cannot insert heterogeneous objects anywhere else it is allowed.
     // TreeSet can contaion null value only if the collection does not have any other object i.e. when the Set is empty.
@@ -82,16 +120,40 @@ public class LearnTreeSet {
         System.out.println("Current Student Names are : " + studentNames);
 
         // Create an Employee class with id, name, and salary. Implement Comparable<Employee> to sort employees by ID in ascending order.
-
-        TreeSet<Employee> employees = new TreeSet<>();
+        // Modify the Employee class from the previous example. Use a Comparator to sort employees by salary in descending order.
+        TreeSet<Employee> employees = new TreeSet<>(new SalaryComparator());
 
         employees.add(new Employee(4,"Sahana",45000));
-        employees.add(new Employee(3,"Sachin",45000));
-        employees.add(new Employee(5,"Sankarshan",45000));
+        employees.add(new Employee(3,"Sachin",49000));
+        employees.add(new Employee(5,"Sankarshan",4500000));
 
         System.out.println("Employees in the TreeSet : "+ employees);
 
-        // Modify the Employee class from the previous example. Use a Comparator to sort employees by salary in descending order.
+        System.out.println("Employees after the comparator class : " + employees);
+
+
+        //Store names in a TreeSet but sort them in reverse alphabetical order.
+        TreeSet<Employee> emploice = new TreeSet<>(new ReverseOrderComparator());
+
+        emploice.add(new Employee(22, "Akash", 200009));
+        emploice.add(new Employee(12, "Vibhor", 2009));
+        emploice.add(new Employee(12, "Kushagra", 200909));
+
+        System.out.println("Employees in reverse natural order : " + emploice);
+
+        // Modify the Students class so that employees with the same name are considered duplicates and are not added to the TreeSet.
+
+        TreeSet<Students> students = new TreeSet<>();
+
+        students.add(new Students(1,"Vaibhav", 2340));
+        students.add(new Students(2,"Vaibhav", 22304));
+        students.add(new Students(3,"Shubham", 2232));
+
+        System.out.println("Students after being added in students class : " + students);
+
+
+
+
 
     }
 
