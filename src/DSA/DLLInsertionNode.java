@@ -200,13 +200,6 @@ class Solution4 {
         }
         twoNode.next = null;
 
-
-
-
-
-
-
-
         // Connect the three lists properly
         if (oneDummy.next != null) {
             zeroNode.next = oneDummy.next; // Connect 0s to 1s
