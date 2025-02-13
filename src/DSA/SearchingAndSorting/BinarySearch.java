@@ -1,7 +1,6 @@
-package DSA;
+package DSA.SearchingAndSorting;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class BinarySearch {
     public static int search(int[] nums, int target) {

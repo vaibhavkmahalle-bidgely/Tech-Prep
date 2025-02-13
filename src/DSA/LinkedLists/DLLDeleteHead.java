@@ -1,4 +1,4 @@
-package DSA;
+package DSA.LinkedLists;
 class ListNode3 {
     int data;
     ListNode3 next;

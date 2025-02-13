@@ -1,6 +1,4 @@
-package DSA;
-
-import org.w3c.dom.ls.LSOutput;
+package DSA.LinkedLists;
 
 class ListNode1 {
     int val;

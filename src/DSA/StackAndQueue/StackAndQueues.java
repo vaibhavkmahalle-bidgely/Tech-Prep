@@ -1,6 +1,5 @@
-package DSA;
+package DSA.StackAndQueue;
 
-import java.io.PrintStream;
 import java.util.*;
 
 class StackQueue {
