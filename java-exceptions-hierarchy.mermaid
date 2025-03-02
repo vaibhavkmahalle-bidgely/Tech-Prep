@@ -1,0 +1,51 @@
+graph TD
+    Throwable --> Error
+    Throwable --> Exception
+
+    Error --> ThreadDeath
+    Error --> VirtualMachineError
+    Error --> AWTError
+    Error --> IOError
+    
+    VirtualMachineError --> InternalError
+    VirtualMachineError --> OutOfMemoryError
+    VirtualMachineError --> StackOverflowError
+    VirtualMachineError --> UnknownError
+
+    Exception --> RuntimeException
+    Exception --> IOException
+    Exception --> SQLException
+    Exception --> AWTException
+    Exception --> InterruptedException
+    Exception --> ClassNotFoundException
+    Exception --> CloneNotSupportedException
+    Exception --> IllegalAccessException
+    Exception --> InstantiationException
+    Exception --> NoSuchFieldException
+    Exception --> NoSuchMethodException
+
+    RuntimeException --> ArithmeticException
+    RuntimeException --> ClassCastException
+    RuntimeException --> IllegalArgumentException
+    RuntimeException --> IllegalStateException
+    RuntimeException --> IndexOutOfBoundsException
+    RuntimeException --> NoSuchElementException
+    RuntimeException --> NullPointerException
+    RuntimeException --> SecurityException
+    RuntimeException --> UnsupportedOperationException
+
+    IllegalArgumentException --> NumberFormatException
+    IllegalArgumentException --> IllegalThreadStateException
+
+    IndexOutOfBoundsException --> ArrayIndexOutOfBoundsException
+    IndexOutOfBoundsException --> StringIndexOutOfBoundsException
+
+    IOException --> EOFException
+    IOException --> FileNotFoundException
+    IOException --> InterruptedIOException
+    IOException --> UnknownHostException
+
+    style Throwable fill:#f9f,stroke:#333,stroke-width:2px
+    style Error fill:#f66,stroke:#333,stroke-width:2px
+    style Exception fill:#6f6,stroke:#333,stroke-width:2px
+    style RuntimeException fill:#ff9,stroke:#333,stroke-width:2px

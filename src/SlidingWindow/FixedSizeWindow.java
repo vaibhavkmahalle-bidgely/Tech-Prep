@@ -3,7 +3,7 @@ package SlidingWindow;
 import java.util.*;
 
 public class FixedSizeWindow {
-    public static int[] firstNegativeInteger(int[] input, int k) {
+    public static int[] firstNegativeIntegerBrute(int[] input, int k) {
         ArrayList<Integer> list = new ArrayList<>();
         boolean flag = true;
 
@@ -27,10 +27,41 @@ public class FixedSizeWindow {
         return intArray;
     }
 
+    public static int[] firstNegativeIntegerSlididng(int[] input, int k) {
+        int r = 0, l = 0, size = input.length;
+        int[] result = new int[size - k + 1];
+        Queue<Integer> q = new ArrayDeque<>();
+        while (r < k - 1) {
+            if (input[r] < 0) {
+                q.add(input[r]);
+            }
+            r++;
+        }
+        while (r < size) {
+            if (input[r] < 0) {
+                q.add(input[r]);
+            }
+            if (q.isEmpty()) {
+                result[l] = 0;
+            } else {
+                if (input[l] == q.peek()) {
+                    result[l] = q.remove();
+                } else {
+                    result[l] = q.peek();
+                }
+            }
+            r++;
+            l++;
+        }
+        return result;
+    }
+
+
     public static void main(String[] args) {
         int[] inputArray = new int[]{12, -1, -7, 8, -15, 30, 16, 28};
-        int k = 2;
+        int k = 3;
 
-        System.out.println("Output : "+ Arrays.toString(firstNegativeInteger(inputArray,k)));
+        System.out.println("Output : " + Arrays.toString(firstNegativeIntegerBrute(inputArray, k)));
+        System.out.println("Sliding output" + Arrays.toString(firstNegativeIntegerSlididng(inputArray, k)));
     }
 }
