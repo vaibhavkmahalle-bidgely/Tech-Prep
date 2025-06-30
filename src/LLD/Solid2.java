@@ -65,6 +65,7 @@ public class Solid2 {
         List<Vehicle> vehicleList = new ArrayList<>();
         vehicleList.add(new motorcycle());
         vehicleList.add(new car());
+        vehicleList.add((new cycle()));
 
         for(Vehicle vehicle: vehicleList){
             System.out.println(vehicle.hasEngine().toString());
