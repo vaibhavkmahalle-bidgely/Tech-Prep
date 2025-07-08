@@ -1,4 +1,4 @@
-package LLD;
+package LLD.SOLIDPrinciples;
 
 import java.util.ArrayList;
 import java.util.List;
