@@ -1,4 +1,4 @@
-package design.patterns.creational.singleton;
+package design.patterns.creational.singleton.lazy;
 
 public class SingletonExample {
 

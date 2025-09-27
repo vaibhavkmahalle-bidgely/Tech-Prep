@@ -1,4 +1,6 @@
 package Stream;
 
-public class LearnLambda {
+@FunctionalInterface
+public interface LearnLambda {
+     void explainLambda();
 }

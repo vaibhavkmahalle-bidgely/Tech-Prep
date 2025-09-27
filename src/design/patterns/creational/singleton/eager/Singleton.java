@@ -1,19 +1,13 @@
-package design.patterns.creational.singleton.lazy;
-// lazy initializtion
+package design.patterns.creational.singleton.eager;
+
 
 public class Singleton {
-    private static Singleton instance = null;
+    // eager initialization : consumes a lot of memory
+    private static Singleton instance = new Singleton();
     private Singleton() {
     }
 
     public static Singleton getInstance() {
-        if (instance == null) {
-            synchronized (Singleton.class) {
-                if (instance == null) {
-                    instance = new Singleton(); // double checking lock -> lazy initialization
-                }
-            }
-        }
         return instance;
     }
 
@@ -21,3 +15,4 @@ public class Singleton {
         System.out.println("Calling Normal Class");
     }
 }
+

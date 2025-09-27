@@ -1,7 +1,9 @@
-package design.patterns.creational.singleton;
+// lazy initializtion
+
+package design.patterns.creational.singleton.lazy;
 
 public class Singleton {
-    private static Singleton instance = null;
+    private static volatile Singleton instance = null;
     private Singleton() {
     }
 
