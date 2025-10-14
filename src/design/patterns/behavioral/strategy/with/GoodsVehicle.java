@@ -1,8 +1,9 @@
-package design.patterns.behavioral.strategy.without;
+package design.patterns.behavioral.strategy.with;
 
-public class GoodsVehicle implements Vehicle {
-    @Override
-    public void drive() {
-        System.out.println("Drive in normal mode");
+import design.patterns.behavioral.strategy.with.strategy.NormalDriveStrategy;
+
+public class GoodsVehicle extends Vehicle {
+    public GoodsVehicle() {
+        super(new NormalDriveStrategy());
     }
 }

@@ -1,7 +1,5 @@
-package design.patterns.behavioral.strategy.with;
+package design.patterns.behavioral.strategy.without;
 
-public class Vehicle {
-    public void drive() {
-        System.out.println("Drive in normal mode");
-    }
+public interface Vehicle {
+    void drive();
 }

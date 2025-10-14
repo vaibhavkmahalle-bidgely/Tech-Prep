@@ -1,8 +1,9 @@
-package design.patterns.behavioral.strategy.without;
+package design.patterns.behavioral.strategy.with;
 
-public class OffRoadVehicle implements Vehicle {
-    @Override
-    public void drive() {
-        System.out.println("drive in sport mode");
+import design.patterns.behavioral.strategy.with.strategy.SportsDriveStrategy;
+
+public class OffRoadVehicle extends Vehicle {
+    public OffRoadVehicle() {
+        super(new SportsDriveStrategy());
     }
 }

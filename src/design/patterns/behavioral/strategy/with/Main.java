@@ -1,4 +1,4 @@
-package design.patterns.behavioral.strategy.without;
+package design.patterns.behavioral.strategy.with;
 
 public class Main {
     public static void main(String[] args) {

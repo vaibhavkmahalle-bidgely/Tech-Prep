@@ -1,4 +1,6 @@
 package design.patterns.creational.factory;
 
-public class Polygon {
+
+public interface Polygon {
+    void draw();
 }
