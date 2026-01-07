@@ -1,4 +1,4 @@
-package SmallPrograms;
+package dsa.smallprograms;
 
 class AA {
     int x = 10;

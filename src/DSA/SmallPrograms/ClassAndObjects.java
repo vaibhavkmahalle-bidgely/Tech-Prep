@@ -1,4 +1,4 @@
-package SmallPrograms;
+package dsa.smallprograms;
 
 class Box {
     private int length, width, height;

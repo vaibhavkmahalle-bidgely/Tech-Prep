@@ -1,4 +1,4 @@
-package DSA.Heap;
+package dsa.heap;
 
 import java.util.*;
 

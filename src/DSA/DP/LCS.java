@@ -1,4 +1,4 @@
-package DSA.DP;
+package dsa.dp;
 import java.util.Arrays;
 // print lcs
 public class LCS {

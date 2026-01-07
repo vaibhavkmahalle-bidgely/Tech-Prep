@@ -1,4 +1,4 @@
-package DSA.StackAndQueue;
+package dsa.stackandqueue;
 
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.ArrayDeque;

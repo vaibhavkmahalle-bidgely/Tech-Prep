@@ -1,4 +1,4 @@
-package SmallPrograms;
+package dsa.smallprograms;
 class Box1{
     private int l, b , h;
     private String who, are, you;

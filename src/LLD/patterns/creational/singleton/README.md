@@ -15,6 +15,7 @@ singleton/
 ├── QUICK_REFERENCE.md                  ← Quick lookup guide
 ├── HER_SERVICE_SINGLETON_EXAMPLES.md   ← Real-world examples from HER service
 ├── EXERCISES.md                        ← Hands-on practice exercises
+├── JAVA_CONCEPTS_REFERENCE.md          ← Java concepts (static, volatile, etc.)
 │
 ├── eager/
 │   ├── Singleton.java                  ← Eager initialization implementation

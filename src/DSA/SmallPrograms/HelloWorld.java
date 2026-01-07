@@ -1,4 +1,4 @@
-package SmallPrograms;
+package dsa.smallprograms;
 
 public class HelloWorld {
     public static void main(String[] args) {

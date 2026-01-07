@@ -1,4 +1,4 @@
-package SmallPrograms;
+package dsa.smallprograms;
 
 class ConA {
     public ConA(){

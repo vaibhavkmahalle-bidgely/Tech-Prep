@@ -1,4 +1,4 @@
-package SlidingWindow;
+package dsa.slidingwindow;
 import java.util.*;
 
 public class SubArrayWithGivenSum {

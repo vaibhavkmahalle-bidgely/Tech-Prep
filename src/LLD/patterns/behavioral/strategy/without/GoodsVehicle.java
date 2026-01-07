@@ -1,4 +1,4 @@
-package design.patterns.behavioral.strategy.without;
+package LLD.patterns.behavioral.strategy.without;
 
 public class GoodsVehicle implements Vehicle {
     @Override

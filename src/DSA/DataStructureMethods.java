@@ -1,4 +1,4 @@
-package DSA;
+package dsa;
 
 public class DataStructureMethods {
 }

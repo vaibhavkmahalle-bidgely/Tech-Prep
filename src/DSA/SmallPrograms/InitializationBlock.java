@@ -1,4 +1,4 @@
-package SmallPrograms;
+package dsa.smallprograms;
 
 public class InitializationBlock {
     private int value;

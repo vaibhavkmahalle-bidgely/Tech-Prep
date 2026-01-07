@@ -1,4 +1,4 @@
-package SOLID.liskov;
+package LLD.SOLIDPrinciples.liskov;
 
 public class Car extends Vehicle{
     public Car(Engine engine){

@@ -1,4 +1,4 @@
-package Classes;
+package classes;
 
 abstract class Shape{
     int x,y;

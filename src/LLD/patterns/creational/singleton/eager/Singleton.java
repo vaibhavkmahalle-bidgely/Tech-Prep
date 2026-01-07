@@ -1,4 +1,4 @@
-package design.patterns.creational.singleton.eager;
+package LLD.patterns.creational.singleton.eager;
 
 
 public class Singleton {

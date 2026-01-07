@@ -1,4 +1,4 @@
-package DSA.StackAndQueue;
+package dsa.stackandqueue;
 
 public class NextGreaterElement {
 }

@@ -1,4 +1,4 @@
-package design.patterns.creational.factory;
+package LLD.patterns.creational.factory;
 
 public class Pentagon implements Polygon {
     @Override

@@ -1,4 +1,4 @@
-package SmallPrograms;
+package dsa.smallprograms;
 
 class TypeConversion {
     int a = 10;

@@ -1,4 +1,4 @@
-package SmallPrograms;
+package dsa.smallprograms;
 
 class Person {
    private String name;

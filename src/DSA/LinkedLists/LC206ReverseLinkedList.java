@@ -1,4 +1,4 @@
-package DSA.LinkedLists;
+package dsa.linkedlists;
 
 /**
  * LeetCode Problem 206: Reverse Linked List

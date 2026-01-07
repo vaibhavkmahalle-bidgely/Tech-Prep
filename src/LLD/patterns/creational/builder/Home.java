@@ -1,4 +1,4 @@
-package design.patterns.creational.builder;
+package LLD.patterns.creational.builder;
 
 public class Home {
     private int rooms;

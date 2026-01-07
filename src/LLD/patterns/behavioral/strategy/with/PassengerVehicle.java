@@ -1,6 +1,6 @@
-package design.patterns.behavioral.strategy.with;
+package LLD.patterns.behavioral.strategy.with;
 
-import design.patterns.behavioral.strategy.with.strategy.NormalDriveStrategy;
+import LLD.patterns.behavioral.strategy.with.strategy.NormalDriveStrategy;
 
 public class PassengerVehicle extends Vehicle {
     public PassengerVehicle() {

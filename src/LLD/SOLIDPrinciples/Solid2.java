@@ -72,7 +72,7 @@ public class Solid2 {
         }
 
         // this is fine till now but if we add another vehicle i.e. cycle class
-        // now vehicle.hasEngine().toString() will give null pointer exception for cycle class that is breaking the code.
+        // now vehicle.hasEngine().toString() will give null pointer javaconcepts.exception for cycle class that is breaking the code.
 
     }
 

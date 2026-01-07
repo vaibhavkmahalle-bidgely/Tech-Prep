@@ -1,4 +1,4 @@
-package java.exception;
+package javaconcepts.exception;
 import java.io.*;
 import java.sql.*;
 import java.text.ParseException;
@@ -18,7 +18,7 @@ public class CheckedExceptions {
             br.close();
         }
         catch (IOException e){
-            System.out.println("Caught IO exception : "+ e.getMessage());
+            System.out.println("Caught IO javaconcepts.exception : "+ e.getMessage());
         }
     }
 

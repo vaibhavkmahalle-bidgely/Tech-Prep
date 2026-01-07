@@ -1,4 +1,4 @@
-package DSA.SearchingAndSorting;
+package dsa.searchingandsorting;
 
 
 public class SqrtNumber {

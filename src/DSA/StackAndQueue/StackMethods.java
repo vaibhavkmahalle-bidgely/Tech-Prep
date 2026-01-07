@@ -1,4 +1,4 @@
-package DSA.StackAndQueue;
+package dsa.stackandqueue;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;

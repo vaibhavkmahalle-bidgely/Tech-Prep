@@ -1,4 +1,4 @@
-package DSA.Arrays;
+package dsa.arrays;
 
 public class ArrayDeclaration {
     public static void main(String[] args) {

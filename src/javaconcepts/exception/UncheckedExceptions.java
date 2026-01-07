@@ -1,4 +1,4 @@
-package java.exception;
+package javaconcepts.exception;
 
 public class UncheckedExceptions {
     public static void NullPointerExceptionExample() {

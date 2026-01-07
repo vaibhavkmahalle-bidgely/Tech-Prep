@@ -1,4 +1,4 @@
-package DSA.BinarySearch;
+package dsa.binarysearch;
 
 public class SearchInRotatedArray {
 

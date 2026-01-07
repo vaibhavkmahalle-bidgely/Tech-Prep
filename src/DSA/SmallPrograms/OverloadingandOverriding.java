@@ -1,4 +1,4 @@
-package SmallPrograms;
+package dsa.smallprograms;
 
 // final keyword for a class is like a nasbandi of that class that class can no longer have children
 final class FinalKeyword {

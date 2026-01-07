@@ -1,4 +1,4 @@
-package design.patterns.behavioral.strategy.with.strategy;
+package LLD.patterns.behavioral.strategy.with.strategy;
 
 public class NormalDriveStrategy implements DriveStrategy{
     @Override

@@ -1,4 +1,4 @@
-package SOLID.liskov;
+package LLD.SOLIDPrinciples.liskov;
 
 public class Vehicle {
     protected Engine engine;

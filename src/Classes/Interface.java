@@ -1,4 +1,4 @@
-package Classes;
+package classes;
 
 public interface Interface {
     // Interface variables are by default public, static and final

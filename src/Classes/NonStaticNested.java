@@ -1,4 +1,4 @@
-package Classes;
+package classes;
 
 class NonStaticOuterClass {
     int instanceVariable = 10;

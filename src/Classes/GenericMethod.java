@@ -1,4 +1,4 @@
-package Classes;
+package classes;
 
 public class GenericMethod {
 //    public void printArray(String []s){

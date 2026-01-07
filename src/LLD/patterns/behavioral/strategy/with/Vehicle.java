@@ -1,6 +1,6 @@
-package design.patterns.behavioral.strategy.with;
+package LLD.patterns.behavioral.strategy.with;
 
-import design.patterns.behavioral.strategy.with.strategy.DriveStrategy;
+import LLD.patterns.behavioral.strategy.with.strategy.DriveStrategy;
 
 public class Vehicle {
     private DriveStrategy driveStrategy;

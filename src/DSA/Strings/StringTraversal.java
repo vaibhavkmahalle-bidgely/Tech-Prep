@@ -1,4 +1,4 @@
-package DSA.Strings;
+package dsa.strings;
 
 //import static java.lang.StringUTF16.charAt;
 

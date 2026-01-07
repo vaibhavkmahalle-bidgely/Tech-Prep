@@ -1,4 +1,4 @@
-package Classes;
+package classes;
 
 class OuterClass {
     int instanceVariable = 10;

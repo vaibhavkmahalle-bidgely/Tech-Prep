@@ -1,4 +1,4 @@
-package Classes;
+package classes;
 
 public class Concrete {
     // Class in which all the methods have implementation is called Classes.Concrete.

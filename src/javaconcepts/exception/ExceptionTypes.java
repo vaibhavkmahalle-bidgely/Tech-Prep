@@ -1,4 +1,4 @@
-package java.exception;
+package javaconcepts.exception;
 
 import classes.Main;
 

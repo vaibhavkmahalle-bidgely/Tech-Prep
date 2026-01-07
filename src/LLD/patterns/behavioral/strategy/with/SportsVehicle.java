@@ -1,6 +1,6 @@
-package design.patterns.behavioral.strategy.with;
+package LLD.patterns.behavioral.strategy.with;
 
-import design.patterns.behavioral.strategy.with.strategy.SportsDriveStrategy;
+import LLD.patterns.behavioral.strategy.with.strategy.SportsDriveStrategy;
 
 public class SportsVehicle extends Vehicle {
     public SportsVehicle() {
