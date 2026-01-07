@@ -1,5 +1,5 @@
 package SmallPrograms;
-import  Classes.*;
+import classes.*;
 public class WrapperClass {
     public static void main(String[] args) {
         Integer i = Integer.valueOf("123");// as valueOf is a static method of Integer class we access it using ClassName.methodName .
