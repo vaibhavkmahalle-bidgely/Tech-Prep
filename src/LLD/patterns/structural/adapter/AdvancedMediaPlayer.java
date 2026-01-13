@@ -1,0 +1,4 @@
+package LLD.patterns.structural.adapter;
+
+public class AdvancedMediaPlayer {
+}
